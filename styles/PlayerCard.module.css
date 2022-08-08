@@ -1,0 +1,34 @@
+/* Remove extra left and right margins, due to padding */
+.row {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  width: 100%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #fff;
+  margin: 5px;
+  border-radius: 6px;
+  border: solid 1px #fff;
+  cursor: pointer;
+}
+
+.card:hover,
+.card:focus {
+  background-color: #dbdbdb;
+}
+
+.card:active {
+  background-color: #dbdbdb;
+}

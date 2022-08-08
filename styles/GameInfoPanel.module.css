@@ -1,0 +1,65 @@
+.gameInfoModule {
+  width: 100%;
+  margin-top: 15px;
+  float: left;
+  font-size: 1rem;
+
+  color: #000;
+  background-color: #fff;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.13);
+
+  /* resize: horizontal; */
+  overflow: auto;
+  overflow-x: hidden;
+
+  border-radius: 6px;
+}
+
+.gameInfoPadding {
+  padding: 0px 10px 0px 10px;
+}
+
+.base {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-content: stretch;
+  color: #d3d3d3;
+  background-color: #fff;
+  font-size: 0px;
+  margin: 0px;
+  min-height: 110px;
+  max-height: 110px;
+  overflow: hidden;
+}
+
+.inactive {
+  color: var(--highlight03);
+  text-decoration: none;
+}
+
+.centerInfo {
+  flex-grow: 0.5;
+  flex-basis: 0;
+  text-align: center;
+  padding: 10px 0px;
+  margin: 0px;
+}
+
+.result {
+  font-size: 1.1rem;
+  font-weight: bold;
+  min-height: 36px;
+  color: #000;
+}
+
+.tournament {
+  font-size: 0.86rem;
+  font-weight: normal;
+  max-height: 51px;
+  overflow: hidden;
+  text-overflow: clip;
+  padding-top: 6px;
+  color: #000;
+}

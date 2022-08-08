@@ -1,0 +1,27 @@
+.piece {
+  color: #000;
+
+  overflow: visible;
+  transition-timing-function: cubic-bezier(0.21, 0.34, 0.29, 0.98);
+
+  cursor: pointer;
+  touch-action: none;
+  z-index: 5;
+
+  /* Field Bottom Left as translation reference point for every piece. Not a1 because board can be flipped. */
+  grid-area: a1;
+
+  background-size: 100% 100%;
+  will-change: transform;
+  transform: scale(0);
+}
+
+.inDrag {
+  z-index: 7;
+  pointer-events: none;
+  filter: drop-shadow(4px 4px 4px #0000003b);
+}
+
+.inactive {
+  pointer-events: none;
+}

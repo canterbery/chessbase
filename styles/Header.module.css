@@ -1,0 +1,30 @@
+.container {
+  display: block;
+  background-color: black;
+  height: 38px;
+  position: relative;
+}
+
+.headline {
+  position: absolute;
+  left: calc(50% - 110px);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-top: 5px;
+  height: calc(100% - 5px);
+}
+
+.headlineText {
+  color: white;
+  margin-right: 8px;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.headlineSubText {
+  color: white;
+  margin-right: 8px;
+  font-size: 0.86rem;
+  font-weight: 400;
+}

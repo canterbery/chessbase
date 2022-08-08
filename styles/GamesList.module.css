@@ -1,0 +1,158 @@
+.container {
+  position: relative;
+  width: 100%;
+  margin-top: 15px;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.header {
+  background-color: #f1f1f1;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-content: stretch;
+  border-bottom: 1px solid;
+  border-color: #ddd;
+}
+
+.headerCellSortable {
+  cursor: pointer;
+}
+
+.headerCellSortable:hover {
+  background-color: #d3d3d3;
+}
+
+.headerCellSortable.selected {
+  background-color: #d3d3d3;
+}
+
+.headerCellInner {
+  padding: 7px 4px 7px 3px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.headerCellInner.selected {
+  padding-right: 20px;
+}
+
+.body {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+
+  /* IE and Edge */
+  -ms-overflow-style: none;
+  /* Firefox */
+  scrollbar-width: none;
+  position: relative;
+  min-height: 1282.5px;
+  max-height: 1282.5px;
+}
+
+/* Chrome etc. */
+.body::-webkit-scrollbar {
+  display: none;
+}
+
+.isEmptyHint {
+  background-color: var(--moduleBGColor);
+  color: var(--textColor);
+  text-align: center;
+  font-size: var(--fontSizeSmall);
+  padding-top: 25px;
+
+  width: 100%;
+  height: 40px;
+}
+
+.bodyRow {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-content: stretch;
+  cursor: pointer;
+  color: #000;
+  border-color: #ddd;
+  background-color: #fff;
+}
+
+.bodyRow.selected {
+  background-color: var(--tableRowSelected);
+  color: var(--textColorSelected);
+  border-color: var(--tableRowSelected);
+}
+
+.bodyRow:hover:not(.selected) {
+  background-color: #d3d3d3;
+}
+
+.cellOuter {
+  position: relative;
+  box-sizing: border-box;
+  flex-grow: 1;
+  flex-basis: 0;
+  font-size: 0.86rem;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  min-width: 8px;
+  border-color: inherit;
+}
+
+.cellInner {
+  box-sizing: border-box;
+  height: 27px;
+
+  padding-left: 3px;
+  padding-top: 6px;
+  /* padding-bottom: 5px; */
+
+  border-style: none solid none none;
+  border-width: 1px;
+  border-color: inherit;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.cellInnerFancy {
+  height: 100%;
+
+  padding-right: 2px;
+  padding-left: 2px;
+  padding-top: 2px;
+  border-style: none solid none none;
+  border-width: 1px;
+  border-color: inherit;
+}
+
+.striped {
+  background-color: #f1f1f1;
+}
+
+.scrollEnd {
+  width: 100%;
+  height: 200px;
+}
+
+.resizer {
+  height: 100%;
+  width: 18px;
+  position: absolute;
+  right: -5px;
+  z-index: 1;
+  cursor: col-resize;
+}
+
+.visibleResizer {
+  height: 100%;
+  /* Depends on width */
+  margin-left: 9px;
+  margin-right: 5px;
+
+  background-color: #ddd;
+}

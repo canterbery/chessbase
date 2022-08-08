@@ -1,0 +1,73 @@
+.playerInfo {
+  flex-grow: 1;
+  flex-basis: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 0px;
+
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-content: stretch;
+  /* align-items: center; */
+
+  /* max-width: 200px; */
+  text-overflow: ellipsis;
+}
+
+.textContainer {
+  flex-grow: 1;
+  flex-basis: 0;
+  padding: 0px 7px 0px 7px;
+}
+
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}
+
+.name {
+  font-size: 1rem;
+  font-weight: bold;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: pre-line;
+  word-break: break-all;
+  min-height: 36px;
+  max-height: 36px;
+}
+
+.playerData {
+  font-size: 0.86rem;
+  font-weight: normal;
+  min-width: 40px;
+  color: #000;
+  padding-top: 6px;
+  white-space: pre-line;
+}
+
+.link {
+  color: #000;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.link:hover {
+  color: var(--primary);
+  text-decoration: underline;
+}
+
+.image {
+  cursor: pointer;
+  max-height: 90px;
+
+  border-radius: 3px;
+}
+
+.inactive {
+  color: var(--highlight03);
+  text-decoration: none;
+}

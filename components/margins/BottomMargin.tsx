@@ -1,0 +1,72 @@
+import margins from "../../styles/BoardMargin.module.css";
+export const BottomMargin = () => {
+  return (
+    <div className={margins.container + " " + margins.bottom}>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        version="1.1"
+        className={margins.marginContent}
+      >
+        <text x="6.25%" y="50%" textAnchor="middle" dominantBaseline="central">
+          A
+        </text>
+        <text
+          x="18.75%"
+          y="50%"
+          text-anchor="middle"
+          dominant-baseline="central"
+        >
+          B
+        </text>
+        <text
+          x="31.25%"
+          y="50%"
+          text-anchor="middle"
+          dominant-baseline="central"
+        >
+          C
+        </text>
+        <text
+          x="43.75%"
+          y="50%"
+          text-anchor="middle"
+          dominant-baseline="central"
+        >
+          D
+        </text>
+        <text
+          x="56.25%"
+          y="50%"
+          text-anchor="middle"
+          dominant-baseline="central"
+        >
+          E
+        </text>
+        <text
+          x="68.75%"
+          y="50%"
+          text-anchor="middle"
+          dominant-baseline="central"
+        >
+          F
+        </text>
+        <text
+          x="81.25%"
+          y="50%"
+          text-anchor="middle"
+          dominant-baseline="central"
+        >
+          G
+        </text>
+        <text
+          x="93.75%"
+          y="50%"
+          text-anchor="middle"
+          dominant-baseline="central"
+        >
+          H
+        </text>
+      </svg>
+    </div>
+  );
+};

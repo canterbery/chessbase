@@ -1,0 +1,8 @@
+export enum FigureNames {
+  KING = "King",
+  QUEEN = "Queen",
+  ROOK = "Rook",
+  BISHOP = "Bishop",
+  KNIGHT = "Knight",
+  PAWN = "Pawn",
+}

@@ -1,0 +1,56 @@
+.container {
+  position: relative;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  height: 38px;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-content: stretch;
+  background-color: #ebebeb;
+}
+
+.base {
+  position: relative;
+  margin: 0px;
+  padding: 5px;
+  font-size: 0.86rem;
+  height: 100%;
+  transition-duration: 0.2s;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex-grow: 1;
+  flex-basis: 0;
+  color: #000;
+  background-color: #ebebeb;
+}
+
+.base:hover,
+.base:focus {
+  background-color: #dbdbdb;
+}
+
+.base:active {
+  background-color: #dbdbdb;
+}
+
+.border {
+  position: absolute;
+  height: 60%;
+  top: 20%;
+  width: 2px;
+  background-color: #ddd;
+}
+
+.borderRight {
+  right: 0px;
+}
+
+.borderLeft {
+  left: 0px;
+}

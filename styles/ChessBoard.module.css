@@ -1,0 +1,44 @@
+.chessBoardGrid {
+  grid-template-rows: 13.2812px repeat(8, 50px) 13.2812px;
+  grid-template-columns: 13.2812px repeat(8, 50px) 13.2812px;
+  display: grid;
+  grid-gap: 0;
+  gap: 0;
+  position: relative;
+  grid-template-areas:
+    "mt mt mt mt mt mt mt mt mt mr"
+    "ml a8 b8 c8 d8 e8 f8 g8 h8 mr"
+    "ml a7 b7 c7 d7 e7 f7 g7 h7 mr"
+    "ml a6 b6 c6 d6 e6 f6 g6 h6 mr"
+    "ml a5 b5 c5 d5 e5 f5 g5 h5 mr"
+    "ml a4 b4 c4 d4 e4 f4 g4 h4 mr"
+    "ml a3 b3 c3 d3 e3 f3 g3 h3 mr"
+    "ml a2 b2 c2 d2 e2 f2 g2 h2 mr"
+    "ml a1 b1 c1 d1 e1 f1 g1 h1 mr"
+    "lc mb mb mb mb mb mb mb mb mr";
+
+  z-index: 2;
+}
+.chessBoardGrid::before {
+  content: "";
+  width: 0;
+  padding-bottom: 100%;
+  grid-row: 1 / 11;
+  grid-column: 1 / 11;
+}
+
+.cellContainer {
+  position: relative;
+  border: none;
+  min-width: 0;
+}
+
+.whiteField {
+  background-color: #ebebeb;
+  z-index: 3;
+}
+
+.blackField {
+  background-color: #d3d3d3;
+  z-index: 3;
+}
